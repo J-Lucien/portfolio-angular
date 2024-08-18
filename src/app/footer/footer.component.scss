@@ -1,0 +1,87 @@
+@use '../../mixins';
+
+$desktop-width: 1024px;
+
+footer {
+    margin-top: 145px;
+    border-top: 1px solid var(--gray);
+    padding: 32px 0;
+}
+
+.footer-container {
+    max-width: $desktop-width;
+    margin: 0 auto;
+
+    .figma{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid var(--gray);
+        align-items: center;
+        p{
+            padding-left: 16px;
+        }
+    }
+}
+
+.footer-content {
+    @include mixins.flex-row;
+    justify-content: space-between;
+
+}
+
+.footer-log {
+    @include mixins.flex-row;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer-log h4 {
+    margin: 0;
+}
+
+.footer-log-wrapper {
+    @include mixins.flex-row;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-log-wrapper a {
+    color: var(--gray);
+    animation: color 0.5s ease;
+}
+
+.footer-container a:hover {
+    color: var(--white);
+}
+
+.footer-info p {
+    color: var(--white);
+    margin-top: 16px;
+}
+
+
+.footer-media {
+    margin-bottom: 8px;
+    h3 {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    a {
+        transition: filter 0.3s ease;
+        filter: invert(29%) sepia(48%) saturate(1517%) hue-rotate(246deg) brightness(95%) contrast(86%);
+
+        &:hover {
+            -webkit-filter: contrast(85%) brightness(200%) saturate(75%) sepia(22%);
+            filter: contrast(85%) brightness(200%) saturate(75%) sepia(22%);
+        }
+    }
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
+}

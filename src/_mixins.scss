@@ -1,0 +1,16 @@
+@mixin flex-row{
+    display: flex;
+}
+
+@mixin button{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+@mixin button-hover{
+    background-color: var(--primary);
+}

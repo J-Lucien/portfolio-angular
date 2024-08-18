@@ -1,1 +1,171 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$desktop-width: 1024px;
+
+:root{
+    --primary: #C778DD;
+    --gray: #ABB2BF;
+    --background-color: #282C33;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: 'Fire code', monospace;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--white);
+}
+
+p {
+    color: var(--gray);
+}
+
+h2{
+    font-size: 32px;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover{
+    background-color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+@media (max-width:$desktop-width) {
+    .main-container {
+        padding: 16px;
+        gap: 85px;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .navbar {
+        padding: 16px;
+        padding-bottom: 0;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-top: 34px;
+    }
+
+    .hero-img {
+        padding: 0 22px;
+    }
+
+    .hero-img img,
+    .portfolio-note-wrapper {
+        width: 100%;
+    }
+
+    .quote blockquote {
+        padding: 24px;
+        font-size: 18px;
+    }
+
+    .quote figcaption {
+        font-size: 18px;
+    }
+
+    .section-header h2::after,
+    .project-left-image,
+    .about-left-image,
+    .contact-left-image {
+        display: none;
+    }
+
+    .project-cards {
+        /* grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto; */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .skills-content img {
+        display: none;
+    }
+
+    .about-content img {
+        max-width: 250px;
+    }
+
+    .contacts-content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        padding: 16px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .skills {
+        gap: 36px;
+    }
+
+    .skills-content img {
+        display: none;
+    }
+
+    .skills-content,
+    .skills-card {
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-container {
+        padding: 16px;
+    }
+
+    footer {
+        margin-top: 45px;
+        padding: 16px 0;
+    }
+}
