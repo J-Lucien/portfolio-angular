@@ -2,6 +2,19 @@
 
 $desktop-width: 1024px;
 
+:host ::ng-deep {
+    .p-speeddial{
+       position: fixed;
+       right: 8px;
+       top: 38px;
+    }
+    .p-speeddial-button.p-button.p-button-icon-only {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+}
+
 header {
     margin-top: 32px;
     margin-bottom: 8px;
@@ -10,9 +23,9 @@ header {
         @include mixins.flex-row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         max-width: $desktop-width;
         margin: 0 auto;
-
         .logo-wrapper {
             @include mixins.flex-row;
             align-items: center;
@@ -57,19 +70,20 @@ header {
                 margin-right: 1px;
             }
 
-            @media (max-width:$desktop-width) {
+            @media (max-width:420px) {
                 display: none;
             }
         }
 
         .burger-icon {
-            display: none;
-            @media (max-width:$desktop-width) {
+            display: none; 
+            margin: 0;  
+            @media (max-width:420px) {
                 display: block;
             }
         }
 
-        
+
     }
 }
 
@@ -84,6 +98,7 @@ header {
     gap: 8px;
     top: 0;
     left: 17px;
+
     @media (max-width:$desktop-width) {
         display: none;
     }
@@ -136,6 +151,3 @@ header {
     margin-top: 2705px;
     position: absolute;
 }
-
-
-
