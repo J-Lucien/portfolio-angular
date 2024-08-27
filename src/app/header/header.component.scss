@@ -26,7 +26,6 @@ header {
         width: 100%;
         max-width: $desktop-width;
         margin: 0 auto;
-        overflow: hidden; 
         .logo-wrapper {
             @include mixins.flex-row;
             align-items: center;
@@ -71,7 +70,7 @@ header {
                 margin-right: 1px;
             }
 
-            @media (max-width:$desktop-width) {
+            @media (max-width:420px) {
                 display: none;
             }
         }
@@ -79,7 +78,7 @@ header {
         .burger-icon {
             display: none; 
             margin: 0;  
-            @media (max-width:$desktop-width) {
+            @media (max-width:420px) {
                 display: block;
             }
         }
