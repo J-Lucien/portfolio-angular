@@ -9,7 +9,11 @@
             <li class="nav-item"><a routerLink="/about-me" class="nav-link">about-me</a></li>
             <li class="nav-item"><a routerLink="/contact" class="nav-link">contacts</a></li>
         </ul>
-        <img src="assets/burger-icon.svg" alt="Navbar Burger Icon" class="burger-icon">
+        <!-- <img src="assets/burger-icon.svg" alt="Navbar Burger Icon" class="burger-icon"> -->
+        <div class="burger-icon">
+            <p-toast />
+            <p-speedDial [model]="items" direction="down" />
+        </div>
     </nav>
 </header>
 <div class="social-links">
