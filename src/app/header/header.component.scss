@@ -56,11 +56,20 @@ header {
                 color: var(--primary);
                 margin-right: 1px;
             }
+
+            @media (max-width:$desktop-width) {
+                display: none;
+            }
         }
 
         .burger-icon {
             display: none;
+            @media (max-width:$desktop-width) {
+                display: block;
+            }
         }
+
+        
     }
 }
 
@@ -75,6 +84,9 @@ header {
     gap: 8px;
     top: 0;
     left: 17px;
+    @media (max-width:$desktop-width) {
+        display: none;
+    }
 }
 
 
