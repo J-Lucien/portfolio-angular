@@ -112,6 +112,30 @@ p {
 }
 
 
+.certifications{
+    .certifications-container{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+        .certificate-card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            border: 1px solid var(--gray);
+            padding: 8px;
+            img{
+                width: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+            p,a{
+                padding: 4px;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 
 @media (max-width:1024px) {
     .main-container{
