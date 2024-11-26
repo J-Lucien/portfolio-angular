@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng deploy --repo=https://github.com/J-Lucien/portfolio-angular.git --base-href=/portfolio-angular/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio-angular": "node dist/portfolio-angular/server/server.mjs"
